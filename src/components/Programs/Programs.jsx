@@ -1,5 +1,5 @@
 import "./Programs.css";
-import { FaDumbbell, FaRunning, FaSpa , FaHeartbeat} from "react-icons/fa";
+import { FaDumbbell, FaRunning, FaSpa, FaHeartbeat } from "react-icons/fa";
 
 function Programs() {
   const programs = [
@@ -22,11 +22,11 @@ function Programs() {
         "Improve flexibility, balance and mental wellness every day.",
     },
     {
-  icon: <FaHeartbeat />,
-  title: "CrossFit",
-  description:
-    "High-intensity functional workouts to improve strength and endurance.",
-}
+      icon: <FaHeartbeat />,
+      title: "CrossFit",
+      description:
+        "High-intensity functional workouts to improve strength and endurance.",
+    },
   ];
 
   return (
@@ -49,17 +49,13 @@ function Programs() {
             data-aos="fade-up"
             data-aos-delay={index * 90}
           >
-            <div className="program-icon">
-              {program.icon}
-            </div>
+            <div className="program-icon">{program.icon}</div>
 
             <h3>{program.title}</h3>
 
             <p>{program.description}</p>
 
-            <button className="learn-btn">
-              Learn More →
-            </button>
+            <button className="learn-btn">Learn More -&gt;</button>
           </div>
         ))}
       </div>

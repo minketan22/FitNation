@@ -1,5 +1,4 @@
 import "./Footer.css";
-
 import {
   FaInstagram,
   FaFacebookF,
@@ -27,13 +26,8 @@ function Footer() {
 
   return (
     <footer className="footer">
-
       <div className="footer-container">
-
-        {/* Left */}
-
         <div className="footer-brand">
-
           <h2>FitNation</h2>
 
           <p>
@@ -60,35 +54,21 @@ function Footer() {
               </a>
             ))}
           </div>
-
         </div>
 
-        {/* Middle */}
-
         <div className="footer-links">
-
           <h3>Quick Links</h3>
 
           <ul>
-
             {quickLinks.map((link) => (
-
               <li key={link.id}>
-                <a href={`#${link.id}`}>
-                  {link.name}
-                </a>
+                <a href={`#${link.id}`}>{link.name}</a>
               </li>
-
             ))}
-
           </ul>
-
         </div>
 
-        {/* Right */}
-
         <div className="footer-contact">
-
           <h3>Contact</h3>
 
           <p>
@@ -105,19 +85,12 @@ function Footer() {
             <FaMapMarkerAlt />
             Mullana, Ambala, Haryana
           </p>
-
         </div>
-
       </div>
 
       <div className="footer-bottom">
-
-        <p>
-          © 2026 TanuGym. All Rights Reserved.
-        </p>
-
+        <p>(c) 2026 TanuGym. All Rights Reserved.</p>
       </div>
-
     </footer>
   );
 }
