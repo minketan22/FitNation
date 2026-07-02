@@ -1,0 +1,130 @@
+.footer {
+  margin-top: 120px;
+  background: #151a22;
+  border-top: 1px solid rgba(255, 106, 0, 0.2);
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 70px 20px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 60px;
+}
+
+.footer-brand h2 {
+  color: #ff6a00;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.footer-brand p {
+  color: #bdbdbd;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 18px;
+}
+
+.social-icons a {
+  width: 45px;
+  height: 45px;
+  background: #1b222c;
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.social-icons a:hover {
+ background: #ff6a00;
+  transform: translateY(-6px) scale(1.08);
+ 
+}
+
+.social-icons a::before {
+  content: "";
+  position: absolute;
+  inset: -120% auto auto -40%;
+  width: 60%;
+  height: 250%;
+  background: rgba(255, 255, 255, 0.16);
+  transform: rotate(25deg);
+  transition: transform 0.5s ease;
+}
+
+.social-icons a:hover::before {
+  transform: translateX(170%) rotate(25deg);
+}
+
+.footer-links h3,
+.footer-contact h3 {
+  color: white;
+  margin-bottom: 25px;
+  font-size: 1.3rem;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 15px;
+}
+
+.footer-links a {
+  color: #bdbdbd;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #ff6a00;
+  padding-left: 8px;
+}
+
+.footer-contact p {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #bdbdbd;
+  margin-bottom: 18px;
+  line-height: 1.6;
+}
+
+.footer-contact svg {
+  color: #ff6a00;
+  font-size: 1rem;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.08);
+  text-align: center;
+  padding: 20px;
+}
+
+.footer-bottom p {
+  color: #8f96a3;
+  font-size: 0.95rem;
+}
+.footer-brand h2:hover {
+  color: #ff8c32;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .social-icons a,
+  .social-icons a::before {
+    transition: none;
+  }
+}

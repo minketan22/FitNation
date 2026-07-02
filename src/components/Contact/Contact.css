@@ -1,0 +1,128 @@
+.contact {
+  max-width: 1200px;
+  margin: 120px auto;
+  padding: 0 20px;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 60px;
+  margin-top: 60px;
+  align-items: start;
+}
+
+/* Left Side */
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.info-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #1b222c;
+  padding: 22px;
+  border-radius: 18px;
+  transition: all 0.3s ease;
+}
+
+.info-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(255, 106, 0, 0.2);
+}
+
+.info-box svg {
+  font-size: 1.8rem;
+  color: #ff6a00;
+}
+
+.info-box h3 {
+  color: #ffffff;
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+}
+
+.info-box p {
+  color:#8e97a6;
+  font-size: 0.95rem;
+}
+
+/* Right Side */
+
+.contact-form {
+  background: #1b222c;
+  padding: 35px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: .3s ease;
+}
+.contact-form:hover{
+    transform: translateY(-5px);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  background: #252d39;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #bdbdbd;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #ff6a00;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+.form-message {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-top: -4px;
+}
+
+.error-message {
+  color: #ff9a7a;
+}
+
+.success-message {
+  color: #7de6a2;
+}
+
+.contact-form button {
+  background: #ff6a00;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: #ff7d1a;
+  transform: translateY(-3px);
+}
+.section-title{
+    margin-bottom:60px;
+}

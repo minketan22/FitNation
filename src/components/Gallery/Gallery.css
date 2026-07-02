@@ -1,0 +1,45 @@
+.gallery {
+  max-width: 1200px;
+  margin: 120px auto;
+  padding: 0 20px;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 70px;
+   margin-bottom: 60px;
+}
+
+.gallery-card {
+  overflow: hidden;
+  border-radius: 18px;
+  cursor: pointer;
+  
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+  
+}
+
+.gallery-card:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-card {
+ transition: transform .3s ease;
+}
+
+.gallery-card:hover {
+  transform: translateY(-8px);
+}
+.section-title h2 {
+    font-size: 3.4rem;
+    line-height: 1.2;
+}
