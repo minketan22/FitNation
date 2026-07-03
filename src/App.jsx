@@ -13,18 +13,35 @@ import Footer from "./components/Footer/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+
 function App() {
-
   useEffect(() => {
-  AOS.init({
-    duration: 1000,
-    once: false,
-    easing: "ease-in-out",
-    disable: () => window.innerWidth <= 991,
-  });
+    const prefersReducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    ).matches;
 
-  AOS.refresh();
-}, []);
+    AOS.init({
+      duration: 1000,
+      once: false,
+      easing: "ease-in-out",
+      disable: prefersReducedMotion,
+    });
+
+    const refreshAnimations = () => AOS.refreshHard();
+
+    window.addEventListener("load", refreshAnimations);
+    window.addEventListener("resize", refreshAnimations);
+    window.addEventListener("orientationchange", refreshAnimations);
+
+    AOS.refresh();
+
+    return () => {
+      window.removeEventListener("load", refreshAnimations);
+      window.removeEventListener("resize", refreshAnimations);
+      window.removeEventListener("orientationchange", refreshAnimations);
+    };
+  }, []);
+
   return (
     <>
       <Navbar gymName="TanuGym" />
