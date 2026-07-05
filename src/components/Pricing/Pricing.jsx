@@ -45,11 +45,16 @@ function Pricing() {
   ];
 
   return (
-    <section id="pricing" className="pricing" data-aos="fade-up">
+    <section
+      id="pricing"
+      className="pricing"
+      data-aos="fade-up"
+      aria-labelledby="pricing-title"
+    >
       <div className="section-title" data-aos="fade-up">
         <span>PRICING PLAN</span>
 
-        <h2>
+        <h2 id="pricing-title">
           Choose Your
           <br />
           Membership
@@ -58,7 +63,7 @@ function Pricing() {
 
       <div className="pricing-container">
         {plans.map((plan, index) => (
-          <div
+          <article
             className={`pricing-card ${plan.popular ? "popular" : ""}`}
             key={plan.name}
             data-aos="fade-up"
@@ -68,10 +73,10 @@ function Pricing() {
 
             <h3>{plan.name}</h3>
 
-            <h2>
+            <p className="plan-price">
               {plan.price}
               <span>{plan.duration}</span>
-            </h2>
+            </p>
 
             <ul>
               {plan.features.map((feature) => (
@@ -83,7 +88,7 @@ function Pricing() {
             </ul>
 
             <Button text="Join Now" variant="primary" />
-          </div>
+          </article>
         ))}
       </div>
     </section>

@@ -30,11 +30,16 @@ function Programs() {
   ];
 
   return (
-    <section id="programs" className="programs" data-aos="fade-up">
+    <section
+      id="programs"
+      className="programs"
+      data-aos="fade-up"
+      aria-labelledby="programs-title"
+    >
       <div className="section-title" data-aos="fade-up">
         <span>OUR PROGRAMS</span>
 
-        <h2>
+        <h2 id="programs-title">
           Build the Perfect Workout
           <br />
           For Your Goals
@@ -43,7 +48,7 @@ function Programs() {
 
       <div className="program-container">
         {programs.map((program, index) => (
-          <div
+          <article
             className="program-card"
             key={program.title}
             data-aos="fade-up"
@@ -55,8 +60,10 @@ function Programs() {
 
             <p>{program.description}</p>
 
-            <button className="learn-btn">Learn More -&gt;</button>
-          </div>
+            <a className="learn-btn" href="#contact">
+              Learn More -&gt;
+            </a>
+          </article>
         ))}
       </div>
     </section>

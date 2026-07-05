@@ -75,6 +75,8 @@
     cursor: pointer;
     margin-top: 15px;
     transition: 0.3s;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .learn-btn:hover {

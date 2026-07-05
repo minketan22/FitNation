@@ -30,11 +30,11 @@ function Stats() {
     },
   ];
     return (
-    <section className="stats" data-aos="fade-up">
+    <section className="stats" data-aos="fade-up" aria-label="FitNation gym statistics">
       <div className="stats-container">
 
         {stats.map((stat, index) => (
-          <div
+          <article
             className="stat-card"
             key={stat.title}
             data-aos="fade-up"
@@ -44,10 +44,10 @@ function Stats() {
     {stat.icon}
   </div>
 
-  <h2>{stat.number}</h2>
+  <p className="stat-number">{stat.number}</p>
 
   <p>{stat.title}</p>
-</div>
+</article>
         ))}
 
       </div>

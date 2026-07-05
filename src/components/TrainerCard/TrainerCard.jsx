@@ -13,7 +13,7 @@ function TrainerCard({
   delay = 0,
 }) {
   return (
-    <div
+    <article
       className="trainer-card"
       data-aos="fade-up"
       data-aos-delay={delay}
@@ -21,7 +21,7 @@ function TrainerCard({
 
       <img
         src={image}
-        alt={name}
+        alt={`${name}, ${role} at FitNation gym`}
       />
 
       <h3>{name}</h3>
@@ -31,13 +31,13 @@ function TrainerCard({
       <p className="experience">
         {experience}
       </p>
-      <div className="social-icons">
-      <FaInstagram />
-      <FaFacebookF />
-      <FaLinkedinIn />
-</div>
+      <div className="social-icons" aria-label={`${name} social media profiles`}>
+        <FaInstagram aria-hidden="true" />
+        <FaFacebookF aria-hidden="true" />
+        <FaLinkedinIn aria-hidden="true" />
+      </div>
 
-    </div>
+    </article>
   );
 }
 

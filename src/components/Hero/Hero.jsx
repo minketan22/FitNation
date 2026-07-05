@@ -4,9 +4,11 @@ import Button from "../Button/Button";
 
 function Hero() {
   return (
-    <section id="home" className="hero">
+    <section id="home" className="hero" aria-labelledby="hero-title">
       <div className="hero-content">
-        <h1>
+        <p className="hero-kicker">FitNation Gym in Mullana, Ambala</p>
+
+        <h1 id="hero-title">
           Transform Your Body <br />
           Transform Your <span>Life</span>
         </h1>
@@ -17,22 +19,21 @@ function Hero() {
         </p>
 
         <div className="hero-buttons">
-            
-         <Button
-        text="Get Started"
-        variant="primary"
-    />
-
-    <Button
-        text="Explore"
-        variant="secondary"
-    />
+          <Button text="Get Started" variant="primary" href="#contact" />
+          <Button
+            text="Explore Programs"
+            variant="secondary"
+            href="#programs"
+          />
         </div>
       </div>
 
-     <div className="hero-image">
-  <img src={heroImage} alt="Gym Hero" />
-</div>
+      <div className="hero-image">
+        <img
+          src={heroImage}
+          alt="FitNation gym members training with modern strength and cardio equipment"
+        />
+      </div>
     </section>
   );
 }

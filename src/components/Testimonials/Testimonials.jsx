@@ -35,12 +35,17 @@ function Testimonials() {
   ];
 
   return (
-    <section id="testimonials" className="testimonials" data-aos="fade-up">
+    <section
+      id="testimonials"
+      className="testimonials"
+      data-aos="fade-up"
+      aria-labelledby="testimonials-title"
+    >
 
       <div className="section-title" data-aos="fade-up">
         <span>TESTIMONIALS</span>
 
-        <h2>
+        <h2 id="testimonials-title">
           What Our
           <br />
           Members Say

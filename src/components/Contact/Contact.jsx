@@ -17,6 +17,13 @@ const initialForm = {
   message: "",
 };
 
+const contactDetails = {
+  address: "Mullana, Ambala, Haryana 133203",
+  phone: "+91 98765 43210",
+  email: "info@fitnationgym.com",
+  hours: "Mon - Sat : 6 AM - 10 PM",
+};
+
 function Contact() {
   const [formData, setFormData] = useState(initialForm);
   const [error, setError] = useState("");
@@ -86,12 +93,17 @@ function Contact() {
   };
 
   return (
-    <section id="contact" className="contact" data-aos="fade-up">
+    <section
+      id="contact"
+      className="contact"
+      data-aos="fade-up"
+      aria-labelledby="contact-title"
+    >
 
       <div className="section-title" data-aos="fade-up">
         <span>CONTACT US</span>
 
-        <h2>
+        <h2 id="contact-title">
           Let's Start Your
           <br />
           Fitness Journey
@@ -108,7 +120,7 @@ function Contact() {
             <FaMapMarkerAlt />
             <div>
               <h3>Address</h3>
-              <p>Mullana, Ambala, Haryana</p>
+              <address>{contactDetails.address}</address>
             </div>
           </div>
 
@@ -116,7 +128,7 @@ function Contact() {
             <FaPhoneAlt />
             <div>
               <h3>Phone</h3>
-              <p>+91 98765 43210</p>
+              <p>{contactDetails.phone}</p>
             </div>
           </div>
 
@@ -124,7 +136,7 @@ function Contact() {
             <FaEnvelope />
             <div>
               <h3>Email</h3>
-              <p>info@tanugym.com</p>
+              <p>{contactDetails.email}</p>
             </div>
           </div>
 
@@ -132,7 +144,7 @@ function Contact() {
             <FaClock />
             <div>
               <h3>Working Hours</h3>
-              <p>Mon - Sat : 6 AM - 10 PM</p>
+              <p>{contactDetails.hours}</p>
             </div>
           </div>
 
@@ -145,33 +157,56 @@ function Contact() {
           data-aos="fade-up"
           data-aos-delay="120"
           onSubmit={handleSubmit}
+          aria-label="Send a WhatsApp enquiry to FitNation"
         >
+          <label className="sr-only" htmlFor="contact-name">
+            Your name
+          </label>
 
           <input
+            id="contact-name"
             type="text"
             name="name"
             placeholder="Your Name"
             value={formData.name}
             onChange={handleChange}
+            autoComplete="name"
           />
 
+          <label className="sr-only" htmlFor="contact-email">
+            Your email
+          </label>
+
           <input
+            id="contact-email"
             type="email"
             name="email"
             placeholder="Your Email"
             value={formData.email}
             onChange={handleChange}
+            autoComplete="email"
           />
 
+          <label className="sr-only" htmlFor="contact-phone">
+            Your phone number
+          </label>
+
           <input
+            id="contact-phone"
             type="tel"
             name="phone"
             placeholder="Phone Number"
             value={formData.phone}
             onChange={handleChange}
+            autoComplete="tel"
           />
 
+          <label className="sr-only" htmlFor="contact-message">
+            Your message
+          </label>
+
           <textarea
+            id="contact-message"
             name="message"
             rows="5"
             placeholder="Your Message"

@@ -68,49 +68,50 @@ function Navbar({ gymName }) {
   }, []);
 
   return (
-   <nav>
-  <div className="nav-container">
-
-    <h2 className="logo">{gymName}</h2>
-
-    <ul
-      id="mobile-navigation"
-      className={`nav-links ${menuOpen ? "active" : ""}`}
-    >
-      {links.map((link) => (
-        <li key={link.id}>
-          <a
-            href={`#${link.id}`}
-            className={activeSection === link.id ? "active" : ""}
-            onClick={() => {
-              setActiveSection(link.id);
-              setMenuOpen(false);
-            }}
-          >
-            {link.name}
+    <header>
+      <nav aria-label="Primary">
+        <div className="nav-container">
+          <a className="logo" href="#home" aria-label={`${gymName} home`}>
+            {gymName}
           </a>
-        </li>
-      ))}
-    </ul>
 
-    <button className="join-btn">Join Now</button>
+          <ul
+            id="mobile-navigation"
+            className={`nav-links ${menuOpen ? "active" : ""}`}
+          >
+            {links.map((link) => (
+              <li key={link.id}>
+                <a
+                  href={`#${link.id}`}
+                  className={activeSection === link.id ? "active" : ""}
+                  onClick={() => {
+                    setActiveSection(link.id);
+                    setMenuOpen(false);
+                  }}
+                >
+                  {link.name}
+                </a>
+              </li>
+            ))}
+          </ul>
 
-    <button
-      type="button"
-      className="menu-icon"
-      aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
-      aria-expanded={menuOpen}
-      aria-controls="mobile-navigation"
-      onClick={() => setMenuOpen(!menuOpen)}
-    >
-      {menuOpen ? <FaTimes /> : <FaBars />}
-    </button>
+          <a className="join-btn" href="#contact">
+            Join Now
+          </a>
 
-  </div>
-</nav>
+          <button
+            type="button"
+            className="menu-icon"
+            aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
+            aria-expanded={menuOpen}
+            aria-controls="mobile-navigation"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            {menuOpen ? <FaTimes /> : <FaBars />}
+          </button>
+        </div>
+      </nav>
+    </header>
   );
-  
 }
-
-
 export default Navbar;

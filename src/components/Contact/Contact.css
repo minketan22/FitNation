@@ -51,6 +51,12 @@
   font-size: 0.95rem;
 }
 
+.info-box address {
+  color: #8e97a6;
+  font-size: 0.95rem;
+  font-style: normal;
+}
+
 /* Right Side */
 
 .contact-form {

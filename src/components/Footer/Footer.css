@@ -13,7 +13,7 @@
   gap: 60px;
 }
 
-.footer-brand h2 {
+.footer-brand-name {
   color: #ff6a00;
   font-size: 2rem;
   margin-bottom: 20px;
@@ -118,7 +118,7 @@
   color: #8f96a3;
   font-size: 0.95rem;
 }
-.footer-brand h2:hover {
+.footer-brand-name:hover {
   color: #ff8c32;
 }
 

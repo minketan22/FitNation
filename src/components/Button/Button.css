@@ -9,9 +9,13 @@
     position: relative;
     overflow: hidden;
     isolation: isolate;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
 }
 
-button:hover{
+.btn:hover{
     transform: translateY(-3px);
 }
 

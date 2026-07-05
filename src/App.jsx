@@ -10,6 +10,7 @@ import Testimonials from "./components/Testimonials/Testimonials";
 import Gallery from "./components/Gallery/Gallery";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
+import SeoManager from "./components/SEO/SeoManager";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -44,16 +45,22 @@ function App() {
 
   return (
     <>
-      <Navbar gymName="TanuGym" />
-      <Hero />
-      <Stats />
-      <About />
-      <Programs />
-      <Trainers />
-      <Pricing />
-      <Testimonials />
-      <Gallery />
-      <Contact />
+      <SeoManager />
+      <a className="skip-link" href="#main-content">
+        Skip to main content
+      </a>
+      <Navbar gymName="FitNation" />
+      <main id="main-content">
+        <Hero />
+        <Stats />
+        <About />
+        <Programs />
+        <Trainers />
+        <Pricing />
+        <Testimonials />
+        <Gallery />
+        <Contact />
+      </main>
       <Footer />
     </>
   );

@@ -10,7 +10,7 @@ function TestimonialCard({
   delay = 0,
 }) {
   return (
-    <div
+    <article
       className="testimonial-card"
       data-aos="fade-up"
       data-aos-delay={delay}
@@ -27,7 +27,7 @@ function TestimonialCard({
       </p>
 
       <div className="member-info">
-        <img src={image} alt={name} />
+        <img src={image} alt={`${name}, a FitNation gym member`} />
 
         <div>
           <h3>{name}</h3>
@@ -35,7 +35,7 @@ function TestimonialCard({
         </div>
       </div>
 
-    </div>
+    </article>
   );
 }
 

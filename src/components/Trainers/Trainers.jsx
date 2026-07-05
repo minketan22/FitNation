@@ -29,11 +29,16 @@ function Trainers() {
   ];
 
   return (
-    <section id="trainers" className="trainers" data-aos="fade-up">
+    <section
+      id="trainers"
+      className="trainers"
+      data-aos="fade-up"
+      aria-labelledby="trainers-title"
+    >
       <div className="section-title" data-aos="fade-up">
         <span>OUR TRAINERS</span>
 
-        <h2>
+        <h2 id="trainers-title">
           Meet Our
           <br />
           Expert Coaches

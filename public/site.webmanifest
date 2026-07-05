@@ -1,0 +1,23 @@
+{
+  "name": "FitNation",
+  "short_name": "FitNation",
+  "description": "FitNation gym and fitness center in Mullana, Ambala with training, yoga, and wellness programs.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1d232a",
+  "theme_color": "#1d232a",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

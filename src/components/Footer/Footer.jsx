@@ -28,7 +28,7 @@ function Footer() {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-brand">
-          <h2>FitNation</h2>
+          <p className="footer-brand-name">FitNation</p>
 
           <p>
             Train Smarter.
@@ -78,18 +78,18 @@ function Footer() {
 
           <p>
             <FaEnvelope />
-            info@tanugym.com
+            info@fitnationgym.com
           </p>
 
           <p>
             <FaMapMarkerAlt />
-            Mullana, Ambala, Haryana
+            Mullana, Ambala, Haryana 133203
           </p>
         </div>
       </div>
 
       <div className="footer-bottom">
-        <p>(c) 2026 TanuGym. All Rights Reserved.</p>
+        <p>(c) 2026 FitNation. All Rights Reserved.</p>
       </div>
     </footer>
   );

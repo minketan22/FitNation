@@ -10,21 +10,44 @@ import gallery6 from "../../assets/images/gallery6.jpg";
 function Gallery() {
 
   const images = [
-    gallery1,
-    gallery2,
-    gallery3,
-    gallery4,
-    gallery5,
-    gallery6,
+    {
+      src: gallery1,
+      alt: "FitNation gym floor with modern resistance machines",
+    },
+    {
+      src: gallery2,
+      alt: "Members training with free weights at FitNation",
+    },
+    {
+      src: gallery3,
+      alt: "Cardio workout area inside FitNation gym",
+    },
+    {
+      src: gallery4,
+      alt: "Strength training session led by a coach at FitNation",
+    },
+    {
+      src: gallery5,
+      alt: "Functional fitness space for group workouts at FitNation",
+    },
+    {
+      src: gallery6,
+      alt: "Clean and spacious workout environment at FitNation gym",
+    },
   ];
 
   return (
-    <section id="gallery" className="gallery" data-aos="fade-up">
+    <section
+      id="gallery"
+      className="gallery"
+      data-aos="fade-up"
+      aria-labelledby="gallery-title"
+    >
 
       <div className="section-title" data-aos="fade-up">
         <span>OUR GALLERY</span>
 
-        <h2>
+        <h2 id="gallery-title">
           Explore
           <br />
           Our Gym
@@ -37,13 +60,13 @@ function Gallery() {
 
           <div
             className="gallery-card"
-            key={index}
+            key={image.alt}
             data-aos="zoom-in-up"
             data-aos-delay={index * 70}
           >
             <img
-              src={image}
-              alt={`Gallery ${index + 1}`}
+              src={image.src}
+              alt={image.alt}
             />
           </div>
 

@@ -14,10 +14,18 @@ function About() {
 
   return (
     
-    <section id="about" className="about" data-aos="fade-up"> 
+    <section
+      id="about"
+      className="about"
+      data-aos="fade-up"
+      aria-labelledby="about-title"
+    >
 
       <div className="about-image">
-        <img src={aboutImage} alt="About Gym"  />
+        <img
+          src={aboutImage}
+          alt="Personal trainer guiding members through a strength workout at FitNation"
+        />
       </div>
 
       <div className="about-content" data-aos="fade-up">
@@ -26,7 +34,7 @@ function About() {
           WHY CHOOSE FITNATION
         </span>
 
-        <h2>
+        <h2 id="about-title">
           Train Smarter,
           <br />
           Become Stronger
