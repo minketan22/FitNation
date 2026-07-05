@@ -6,7 +6,7 @@ const publicDir = path.join(projectRoot, "public");
 
 const normalizeSiteUrl = (value) => {
   if (!value) {
-    return "https://fitnation.vercel.app";
+    return "https://tanugym.vercel.app";
   }
 
   const withProtocol = /^https?:\/\//i.test(value) ? value : `https://${value}`;
@@ -42,10 +42,10 @@ const sitemapContent = `<?xml version="1.0" encoding="UTF-8"?>
 
 const manifestContent = JSON.stringify(
   {
-    name: "FitNation",
-    short_name: "FitNation",
+    name: "TanuGym",
+    short_name: "TanuGym",
     description:
-      "FitNation gym and fitness center in Mullana, Ambala with training, yoga, and wellness programs.",
+      "TanuGym gym and fitness center in Mullana, Ambala with training, yoga, and wellness programs.",
     start_url: "/",
     display: "standalone",
     background_color: "#1d232a",

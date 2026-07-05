@@ -30,7 +30,7 @@ function Stats() {
     },
   ];
     return (
-    <section className="stats" data-aos="fade-up" aria-label="FitNation gym statistics">
+    <section className="stats" data-aos="fade-up" aria-label="TanuGym statistics">
       <div className="stats-container">
 
         {stats.map((stat, index) => (

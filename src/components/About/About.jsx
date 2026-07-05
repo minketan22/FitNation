@@ -24,14 +24,14 @@ function About() {
       <div className="about-image">
         <img
           src={aboutImage}
-          alt="Personal trainer guiding members through a strength workout at FitNation"
+          alt="Personal trainer guiding members through a strength workout at TanuGym"
         />
       </div>
 
       <div className="about-content" data-aos="fade-up">
 
         <span className="about-subtitle"> 
-          WHY CHOOSE FITNATION
+          WHY CHOOSE TANUGYM
         </span>
 
         <h2 id="about-title">

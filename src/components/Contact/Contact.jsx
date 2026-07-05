@@ -20,7 +20,7 @@ const initialForm = {
 const contactDetails = {
   address: "Mullana, Ambala, Haryana 133203",
   phone: "+91 98765 43210",
-  email: "info@fitnationgym.com",
+  email: "info@tanugym.com",
   hours: "Mon - Sat : 6 AM - 10 PM",
 };
 
@@ -68,7 +68,7 @@ function Contact() {
     }
 
     const whatsappMessage = [
-      "Hello FitNation, I would like to enquire about joining.",
+      "Hello TanuGym, I would like to enquire about joining.",
       "",
       `Name: ${trimmedForm.name}`,
       `Email: ${trimmedForm.email}`,
@@ -157,7 +157,7 @@ function Contact() {
           data-aos="fade-up"
           data-aos-delay="120"
           onSubmit={handleSubmit}
-          aria-label="Send a WhatsApp enquiry to FitNation"
+          aria-label="Send a WhatsApp enquiry to TanuGym"
         >
           <label className="sr-only" htmlFor="contact-name">
             Your name

@@ -12,27 +12,27 @@ function Gallery() {
   const images = [
     {
       src: gallery1,
-      alt: "FitNation gym floor with modern resistance machines",
+      alt: "TanuGym gym floor with modern resistance machines",
     },
     {
       src: gallery2,
-      alt: "Members training with free weights at FitNation",
+      alt: "Members training with free weights at TanuGym",
     },
     {
       src: gallery3,
-      alt: "Cardio workout area inside FitNation gym",
+      alt: "Cardio workout area inside TanuGym gym",
     },
     {
       src: gallery4,
-      alt: "Strength training session led by a coach at FitNation",
+      alt: "Strength training session led by a coach at TanuGym",
     },
     {
       src: gallery5,
-      alt: "Functional fitness space for group workouts at FitNation",
+      alt: "Functional fitness space for group workouts at TanuGym",
     },
     {
       src: gallery6,
-      alt: "Clean and spacious workout environment at FitNation gym",
+      alt: "Clean and spacious workout environment at TanuGym gym",
     },
   ];
 

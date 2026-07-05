@@ -27,7 +27,7 @@ function TestimonialCard({
       </p>
 
       <div className="member-info">
-        <img src={image} alt={`${name}, a FitNation gym member`} />
+        <img src={image} alt={`${name}, a TanuGym member`} />
 
         <div>
           <h3>{name}</h3>

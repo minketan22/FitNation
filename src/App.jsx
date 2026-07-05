@@ -49,7 +49,7 @@ function App() {
       <a className="skip-link" href="#main-content">
         Skip to main content
       </a>
-      <Navbar gymName="FitNation" />
+      <Navbar gymName="TanuGym" />
       <main id="main-content">
         <Hero />
         <Stats />

@@ -2,20 +2,20 @@ import { useEffect } from "react";
 import logoImage from "../../assets/logo.png";
 
 const seoConfig = {
-  title: "FitNation | Gym & Fitness Center in Mullana, Ambala",
+  title: "TanuGym | Gym & Fitness Center in Mullana, Ambala",
   description:
-    "FitNation is a modern gym in Mullana, Ambala offering strength training, cardio, yoga, personal training, and fitness coaching to help you build a stronger, healthier lifestyle.",
+    "TanuGym is a modern gym in Mullana, Ambala offering strength training, cardio, yoga, personal training, and fitness coaching to help you build a stronger, healthier lifestyle.",
   keywords:
-    "FitNation gym, gym in Mullana, gym in Ambala, fitness center Haryana, personal training, strength training, cardio classes, yoga classes, local gym near me",
-  author: "FitNation",
-  ogTitle: "FitNation | Gym & Fitness Center in Mullana, Ambala",
+    "TanuGym, gym in Mullana, gym in Ambala, fitness center Haryana, personal training, strength training, cardio classes, yoga classes, local gym near me",
+  author: "TanuGym",
+  ogTitle: "TanuGym | Gym & Fitness Center in Mullana, Ambala",
   ogDescription:
-    "Join FitNation for expert coaching, modern equipment, personalized fitness plans, and motivating gym experiences in Mullana, Ambala.",
-  twitterTitle: "FitNation | Gym & Fitness Center in Mullana, Ambala",
+    "Join TanuGym for expert coaching, modern equipment, personalized fitness plans, and motivating gym experiences in Mullana, Ambala.",
+  twitterTitle: "TanuGym | Gym & Fitness Center in Mullana, Ambala",
   twitterDescription:
-    "Train smarter with FitNation through strength training, cardio, yoga, and personal coaching in Mullana, Ambala.",
+    "Train smarter with TanuGym through strength training, cardio, yoga, and personal coaching in Mullana, Ambala.",
   phone: "+91 98765 43210",
-  email: "info@fitnationgym.com",
+  email: "info@tanugym.com",
   address: {
     streetAddress: "Mullana",
     addressLocality: "Ambala",
@@ -87,7 +87,7 @@ function SeoManager() {
     setMetaContent(
       'meta[property="og:site_name"]',
       { property: "og:site_name" },
-      "FitNation"
+      "TanuGym"
     );
     setMetaContent(
       'meta[property="og:title"]',
@@ -112,7 +112,7 @@ function SeoManager() {
     setMetaContent(
       'meta[property="og:image:alt"]',
       { property: "og:image:alt" },
-      "FitNation gym logo"
+      "TanuGym gym logo"
     );
     setMetaContent(
       'meta[property="og:locale"]',
@@ -142,7 +142,7 @@ function SeoManager() {
     setMetaContent(
       'meta[name="twitter:image:alt"]',
       { name: "twitter:image:alt" },
-      "FitNation gym logo"
+      "TanuGym gym logo"
     );
 
     const canonical = ensureTag('link[rel="canonical"]', () => {
@@ -156,15 +156,15 @@ function SeoManager() {
       {
         "@context": "https://schema.org",
         "@type": "WebSite",
-        name: "FitNation",
+        name: "TanuGym",
         url: siteOrigin,
         description: seoConfig.description,
       },
       {
         "@context": "https://schema.org",
         "@type": "ExerciseGym",
-        "@id": `${siteOrigin}/#fitnation-gym`,
-        name: "FitNation",
+        "@id": `${siteOrigin}/#tanugym`,
+        name: "TanuGym",
         image: imageUrl,
         url: canonicalUrl,
         telephone: seoConfig.phone,

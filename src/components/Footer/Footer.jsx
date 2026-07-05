@@ -28,7 +28,7 @@ function Footer() {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-brand">
-          <p className="footer-brand-name">FitNation</p>
+          <p className="footer-brand-name">TanuGym</p>
 
           <p>
             Train Smarter.
@@ -78,7 +78,7 @@ function Footer() {
 
           <p>
             <FaEnvelope />
-            info@fitnationgym.com
+            info@tanugym.com
           </p>
 
           <p>
@@ -89,7 +89,7 @@ function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <p>(c) 2026 FitNation. All Rights Reserved.</p>
+        <p>(c) 2026 TanuGym. All Rights Reserved.</p>
       </div>
     </footer>
   );
