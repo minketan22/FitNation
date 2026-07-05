@@ -1,4 +1,4 @@
-# 💪 FitNation - Gym & Fitness Website
+# 💪 TanuGym - Gym & Fitness Website
 
 A modern, fully responsive gym and fitness website built with **React** and **Vite**. The project features a clean UI, smooth animations, reusable React components, and a mobile-first responsive design.
 
@@ -54,7 +54,7 @@ A modern, fully responsive gym and fitness website built with **React** and **Vi
 ## 📁 Project Structure
 
 ```text
-FitNation/
+TanuGym/
 │
 ├── public/
 ├── src/
@@ -95,7 +95,7 @@ git clone YOUR_GITHUB_LINK
 ### Navigate to the Project
 
 ```bash
-cd FitNation
+cd TanuGym
 ```
 
 ### Install Dependencies
